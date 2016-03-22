@@ -1,0 +1,790 @@
+.after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  font-size: 0;
+  vertical-align: middle;
+  background-color: #ccc;
+}
+* {
+  font-family: "微软雅黑";
+}
+html,
+body {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+/**********************头部轮播图********************************/
+.swiper-container {
+  width: 100%;
+  max-width: 640px;
+}
+.swiper-slide {
+  display: block;
+  width: 100%;
+}
+.swiper-slide img {
+  display: block;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: red;
+}
+/**********************头部图标********************************/
+#head_box li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  box-sizing: border-box;
+}
+#head_box li:nth-child(4n+1) {
+  border-left: none;
+}
+#head_box a {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 10px;
+  color: #333333;
+}
+#head_box a:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 9px;
+  padding: 10px 0 5px 0;
+}
+#head_box .head-list-1 {
+  background: url(../img/head_box.png) center 10px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-2 {
+  background: url(../img/head_box.png) center -70px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-3 {
+  background: url(../img/head_box.png) center -150px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-4 {
+  background: url(../img/head_box.png) center -230px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-5 {
+  background: url(../img/head_box.png) center -310px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-6 {
+  background: url(../img/head_box.png) center -390px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-7 {
+  background: url(../img/head_box.png) center -470px no-repeat;
+  background-size: 50px 600px;
+}
+#head_box .head-list-8 {
+  background: url(../img/head_box.png) center -550px no-repeat;
+  background-size: 50px 600px;
+}
+/**********************装修效果图********************************/
+.design-sketch {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.design-sketch .design-sketch-nav {
+  display: block;
+  height: 36px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  line-height: 36px;
+  padding-left: 20px;
+}
+.design-sketch .design-sketch-a {
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.design-sketch .design-sketch-b,
+.design-sketch .design-sketch-c {
+  float: left;
+  width: 46%;
+  margin-top: 15px;
+  margin-left: 3%;
+}
+.design-sketch-list ul {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+.design-sketch-list ul li {
+  display: inline-block;
+  width: 17%;
+  padding-bottom: 10px;
+  margin: 10px 3% 0 0;
+}
+.design-sketch-list ul li:nth-child(5n+5) {
+  margin-right: 0;
+}
+.design-sketch-list ul a {
+  display: inline-block;
+  font-size: 10px;
+  color: #666666;
+  width: 100%;
+  height: 18px;
+  text-align: center;
+  background-color: #ededed;
+  border-radius: 4px;
+  line-height: 18px;
+}
+.design-sketch-list ul .list-one-,
+.design-sketch-list ul .list-one {
+  border-bottom: 1px dashed #ededed;
+}
+.design-sketch-list ul .list-one- a {
+  color: #fff;
+  background: #ffc508 url(../img/list-.png) 0px 0px no-repeat;
+  background-size: 17px 48px;
+}
+.design-sketch-list ul .list-two- a {
+  color: #fff;
+  background: #fa4e3e url(../img/list-.png) 0px -29px no-repeat;
+  background-size: 17px 48px;
+}
+.design-sketch-list-b {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.design-sketch-list-b span {
+  float: left;
+  width: 50%;
+  height: 32px;
+  margin: 0 auto;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  text-align: center;
+}
+.design-sketch-list-b span:nth-child(1) {
+  border-radius: 4px 0 0 4px;
+}
+.design-sketch-list-b span:nth-child(2) {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  color: #fa4736;
+}
+.design-sketch-list-b span a {
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  color: #666666;
+}
+.design-sketch-list-b span .a {
+  width: 100%;
+  line-height: 32px;
+}
+.design-sketch-list-b span .a i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url(../img/list-two.png) 0px 0px no-repeat;
+  background-size: 15px 45px;
+}
+.design-sketch-list-b span .b {
+  width: 100%;
+  line-height: 32px;
+  color: #fa4535;
+}
+.design-sketch-list-b span .b i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  vertical-align: middle;
+  margin-left: 5px;
+  background: url(../img/list-two.png) 0px -32px no-repeat;
+  background-size: 15px 45px;
+}
+/**********************报价表********************************/
+.tariff_box {
+  width: 100%;
+  background-color: #f8f8f8;
+  margin-top: 25px;
+}
+.tariff_box .tariff {
+  float: left;
+  width: 96%;
+  border: 1px solid #ededed;
+  border-top-color: #ffb039;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 25px 0 25px 11px;
+}
+.tariff_box .tariff .tariff_head {
+  display: inline-block;
+  width: 100%;
+  margin: 30px 0  35px 0;
+  font-size: 14px;
+  color: #333333;
+}
+.tariff_box .tariff .tariff_head img {
+  float: left;
+  width: 16px;
+  height: 19px;
+  margin-left: 30%;
+  margin-right: 5%;
+}
+.tariff_box .tariff span {
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tariff_box .tariff span input {
+  padding-left: 3%;
+  width: 45%;
+  height: 31px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+.tariff_box .tariff span select {
+  padding-left: 20px;
+  width: 45%;
+  margin-left: 5px;
+  height: 31px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+.tariff_box .tariff span select:after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+.tariff_box .tariff .famliy_style {
+  display: block;
+  width: 91%;
+  height: 33px;
+  margin: 0 auto;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.tariff_box .tariff .grade {
+  display: block;
+  width: 91%;
+  height: 33px;
+  margin: 0 auto;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.tariff_box .tariff .tariff_buttom {
+  display: block;
+  margin: 0 auto;
+  width: 91%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fa4e3e;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+/**********************装修攻略********************************/
+.strategy .strategy_head {
+  display: block;
+  height: 36px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  padding-left: 20px;
+  line-height: 36px;
+  background-color: #f8f8f8;
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
+}
+.strategy ul {
+  width: 90%;
+  height: 95px;
+  border-bottom: 1px solid #ededed;
+  margin: 0 auto;
+}
+.strategy ul li {
+  float: left;
+  width: 49%;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 8px;
+  text-align: center;
+}
+.strategy ul li:nth-child(2n+2) {
+  margin-left: 2%;
+}
+.strategy ul li a {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  margin: 0 auto;
+  text-align: center;
+}
+.strategy ul li a i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.strategy ul .tariff-one i {
+  background: url(../img/tariff.png) center -25px no-repeat;
+  background-size: 20px 125px;
+}
+.strategy ul .tariff-two i {
+  background: url(../img/tariff.png) center -50px no-repeat;
+  background-size: 20px 125px;
+}
+.strategy ul .tariff-three i {
+  background: url(../img/tariff.png) center -75px no-repeat;
+  background-size: 20px 125px;
+}
+.strategy ul .tariff-foru i {
+  background: url(../img/tariff.png) center -103px no-repeat;
+  background-size: 20px 125px;
+}
+.strategy dl {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 20px;
+}
+.strategy dt {
+  float: left;
+  width: 33.3%;
+}
+.strategy dt img {
+  width: 100%;
+}
+.strategy dd {
+  padding-top: 10px;
+}
+.strategy dd span,
+.strategy dd var {
+  display: block;
+  margin-left: 38%;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.strategy dd span {
+  font-size: 12px;
+  color: #333333;
+}
+.strategy dd var {
+  font-size: 10px;
+  color: #666666;
+  height: 38px;
+}
+/**********************装修流程********************************/
+.flow ul {
+  width: 93.7%;
+  margin: 15px auto;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.flow li {
+  float: left;
+  width: 33%;
+  padding: 15px 0;
+  text-align: center;
+}
+.flow i {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-color: #ccc;
+  margin: 0 auto 15px;
+}
+.flow .s-a:after,
+.flow .s-b:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 30px;
+  right: -5%;
+  width: 13px;
+  height: 10px;
+  background-color: #ccc;
+}
+.flow a {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #666666;
+}
+.flow .icon-decorate-a i {
+  background: url(../img/icon-decorate.png) center 0px no-repeat;
+  background-size: 64px 200px;
+}
+.flow .icon-decorate-a span:after {
+  background: url(../img/icon-decorate-min.png) center 0px no-repeat;
+  background-size: 12px 30px;
+}
+.flow .icon-decorate-b i {
+  background: url(../img/icon-decorate.png) center -68px no-repeat;
+  background-size: 64px 200px;
+}
+.flow .icon-decorate-b span:after {
+  background: url(../img/icon-decorate-min.png) center -21px no-repeat;
+  background-size: 12px 30px;
+}
+.flow .icon-decorate-c i {
+  background: url(../img/icon-decorate.png) center -135px no-repeat;
+  background-size: 64px 200px;
+}
+.img-time {
+  margin-top: 10px;
+}
+/**********************搜索栏列表********************************/
+.input-box {
+  width: 92%;
+  margin: 0 auto;
+}
+.input-box form {
+  margin-top: 10px;
+}
+.input-box input {
+  float: left;
+  padding-left: 20px;
+  width: 70%;
+  height: 27px;
+  border: 1px solid #ededed;
+  border-radius: 4px 0 0 4px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+.input-box .input-box-a {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  height: 27px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 27px;
+  background-color: #fa4e3e;
+  border-radius: 0 4px 4px 0;
+}
+.input-box .input-box-a:before {
+  display: inline-block;
+  float: left;
+  content: "";
+  width: 14px;
+  height: 15px;
+  padding-right: 5px;
+  margin: 6px 0 0 5px;
+  background: url(../img/input-box-img.png) 0px 0px no-repeat;
+  background-size: 14px 15px;
+}
+.input-box ul {
+  width: 92%;
+  margin: 0 auto;
+}
+.input-box ul li {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ededed;
+}
+.input-box ul li span {
+  display: inline-block;
+  margin-top: 10px ;
+}
+.input-box ul li a {
+  display: inline-block;
+  color: #fa3625;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.input-box ul li .right-a {
+  float: right;
+  font-size: 10px;
+  color: #999999;
+}
+.input-box ul li .right-a:before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url(../img/br.png) 0px 0px no-repeat;
+  background-size: 6px 8px;
+}
+/**********************本地新闻********************************/
+.news .news_head {
+  display: block;
+  height: 36px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: 10px;
+  line-height: 36px;
+  background-color: #f8f8f8;
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
+}
+.news ul li {
+  width: 96%;
+  margin: 0 auto;
+}
+.news ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+.news ul li a i {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 12px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.news ul li em {
+  float: right;
+  color: #666666;
+  line-height: 50px;
+}
+/**********************装修计算器********************************/
+.calculator .calculator_head {
+  display: block;
+  height: 36px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: 10px;
+  line-height: 36px;
+  background-color: #f8f8f8;
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
+}
+.calculator ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+.calculator ul li:nth-child(3n+3) {
+  border-right: none;
+}
+.calculator ul li a {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #333333;
+  padding: 10px 0;
+}
+.calculator ul li a:before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 45px;
+  margin: 0 auto 9px;
+}
+.calculator ul li .calc-one:before {
+  background: url(../img/calu.png) 0px 0px no-repeat;
+  background-size: 42px 270px;
+}
+.calculator ul li .calc-two:before {
+  background: url(../img/calu.png) 0px -46px no-repeat;
+  background-size: 42px 270px;
+}
+.calculator ul li .calc-three:before {
+  background: url(../img/calu.png) 0px -92px no-repeat;
+  background-size: 42px 270px;
+}
+.calculator ul li .calc-foru:before {
+  background: url(../img/calu.png) 0px -137px no-repeat;
+  background-size: 42px 270px;
+}
+.calculator ul li .calc-five:before {
+  background: url(../img/calu.png) 0px -183px no-repeat;
+  background-size: 42px 270px;
+}
+.calculator ul li .calc-six:before {
+  background: url(../img/calu.png) 0px -229px no-repeat;
+  background-size: 42px 270px;
+}
+/**********************底部********************************/
+.bottom {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+}
+.bottom .bottom img {
+  padding-top: 15px;
+}
+.bottom ul {
+  margin-top: 22px;
+}
+.bottom ul li,
+.bottom ul span {
+  float: left;
+  text-align: center;
+}
+.bottom ul li {
+  width: 26%;
+}
+.bottom ul span {
+  width: 5%;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 6px;
+}
+.bottom ul a {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  font-size: 10px;
+  color: #666666;
+  line-height: 25px;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.bottom .phone {
+  display: inline-block;
+  width: 55%;
+  height: 28px;
+  line-height: 28px;
+  font-size: 10px;
+  color: #666666;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+.bottom .phone:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto ;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: #ccc;
+  background: url(../img/phone.png) 0px 0px no-repeat;
+  background-size: 15px 15px;
+}
+.bottom .phone em {
+  color: #f93d2c;
+}
+.bottom var a {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #666666;
+  margin-top: 5px;
+}
+.bottom strong a {
+  margin: 5px 0;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #57bff3;
+}
+.bottom strong a:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto ;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url(../img/diannao.png) 0px 0px no-repeat;
+  background-size: 16px 12px;
+}
+.button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.button a {
+  position: relative;
+  display: block;
+  width: 41px;
+  height: 41px;
+  background-color: #838383;
+  text-align: center;
+  margin-bottom: 8px;
+  border-radius: 20.5px;
+}
+.button a span {
+  font-size: 10px;
+  color: #fff;
+  line-height: 58px;
+}
+.button a i {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  display: block;
+  width: 21px;
+  height: 17px;
+}
+.button .a-1 i {
+  background: url(../img/button.png) 0px 0px no-repeat;
+  background-size: 21px 45px;
+}
+.button .a-2 i {
+  background: url(../img/button.png) 0px -28px no-repeat;
+  background-size: 21px 45px;
+}
